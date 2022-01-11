@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ETF-8" />
+    <title>Maze Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="welcome-maze-container">
+        <h1>Olde Worlde Phunne maze</h1>
+        <p>The aim of the game is to reach the goal however you feel!<br> You can decide to clear it as quick as you can,<br> or you can stop and pick up all the treasure along the way.<br> The choice is yours!</p>
+        <p>Please enter your name and click the button below to begin your Adventure!</p>
+        <div class="input-container">
+            <label for="name">Enter your name below:</label>
+            <input id="name" name="name" type="text" autocomplete="off" required>
+            <input id="submit-button" name="submit-button" type="submit" value="Start Adventure" />
+            <div class="validation-msg hidden">
+                <p>I couldn't possibly send you out there without know your name first!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="maze-game-container hidden">
+        <h1 class="above-maze-board">Current Player:</h1>
+        <h3 class="player-name"></h3>
+        <div class="score">Score: <span>0</span></div>
+        <div id="maze-layout"></div>
+        <div id="controls">
+            <button class="up">Up</button>
+            <div>
+                <button class="left">Left</button>
+                <button class="right">Right</button>
+            </div>
+            <button class="down">Down</button>
+        </div>
+    </div>
+
+    <div class="success-msg hidden">
+        <h1>You did it!</h1>
+        <h2>you escaped the maze!</h2>
+        <h2>Your score for this level was:</h2>
+        <div class="score">Score: <span>0</span></div>
+        <button class="play-again">Play again</button>
+    </div>
+
+    <div class="geoff-linton hidden">
+        <h1>THE LINTONATOR</h1>
+    </div>
+
+    <script src="js/maze.js"></script>
+</body>
+
+</html>

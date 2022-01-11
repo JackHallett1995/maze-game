@@ -1,0 +1,148 @@
+@font-face {
+    src: url(fonts/Poppins/Poppins-Regular.ttf);
+    font-family: maze;
+}
+
+@font-face {
+    src: url(fonts/Gravitas_One/GravitasOne-Regular.ttf);
+    font-family: gravitas;
+}
+
+body {
+    background: black;
+    color: #057dcd;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    height: 95vh;
+}
+
+.success-msg {
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Gravitas One', cursive;
+    font-weight: normal;
+}
+
+input {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.above-maze-board,
+.score,
+.player-name {
+    text-align: center;
+}
+
+#controls {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.right {
+    margin-left: 25px;
+}
+
+.left {
+    margin-right: 25px;
+}
+
+button {
+    width: 100px;
+    margin: 5px;
+}
+
+#submit-button,
+button {
+    padding: 10px;
+    background-color: #057dcd;
+    border-radius: 10px;
+}
+
+#submit-button:hover {
+    padding: 10px;
+    background-color: #1e3d58;
+}
+
+.hidden {
+    display: none;
+}
+
+.welcome-maze-container {
+    text-align: center;
+}
+
+#maze-layout {
+    text-align: center;
+}
+
+#maze-layout {
+    line-height: 0;
+}
+
+#maze-layout .row {
+    display: block;
+}
+
+#maze-layout .row>div {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+}
+
+#maze-layout .wall {
+    background-color: #1e3d58;
+}
+
+#maze-layout .path {
+    background-color: #057dcd;
+}
+
+#maze-layout .treasure {
+    background-color: blue;
+    width: 15px;
+    height: 15px;
+    margin: 7px auto;
+}
+
+#maze-layout .player {
+    background-color: maroon;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transform: scale(0.6);
+}
+
+#maze-layout .goal {
+    background-color: pink;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transform: scale(0.6);
+}
+
+/* Extra CSS */
+.geoff-linton {
+    background-image: url(https://www.coolsmartphone.com/wp-content/uploads/2020/04/Capture.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    background-position: center;
+
+}
+
+.geoff-linton h1 {
+    text-align: center;
+}
